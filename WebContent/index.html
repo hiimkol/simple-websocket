@@ -12,8 +12,10 @@
 		<input onclick="sendMessage();" value="send" type="button">
 	</form>
 	<script type="text/javascript">
+		    
+
 		var webSocket = new WebSocket(
-				"ws://localhost:8080/ChatWebsocket/server");
+				"ws://test-java-kol.herokuapp.com/ChatWebsocket/server");
 		var messagesTextArea = document.getElementById("messagesTextArea")
 		webSocket.onopen = function(message) {
 			processOpen(message);
