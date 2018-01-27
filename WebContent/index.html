@@ -15,7 +15,7 @@
 		    
 
 		var webSocket = new WebSocket(
-				"ws://test-java-kol.herokuapp.com/ChatWebsocket/server");
+				"ws://http://krader-chat-websocket.kilatiron.com/ChatWebsocket/server");
 		var messagesTextArea = document.getElementById("messagesTextArea")
 		webSocket.onopen = function(message) {
 			processOpen(message);
